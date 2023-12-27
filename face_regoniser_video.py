@@ -2,9 +2,9 @@ import cv2 as cv
 import numpy as np
 import os
 
-haarcascade_frontface_def =cv.CascadeClassifier("C:/Users/saumi/OneDrive/Desktop/CODES/opencv/opencv-4.x/data/haarcascades/haarcascade_frontalface_default.xml")
+haarcascade_frontface_def =cv.CascadeClassifier("haarcascade_frontalface_default.xml") 
 
-DIR=r'C:\Users\saumi\OneDrive\Desktop\CODES\archive\database\Bollywood Actor Images\Bollywood Actor Images'
+DIR=r'C:\Users\saumi\OneDrive\Desktop\CODES\archive\database\Bollywood Actor Images\Bollywood Actor Images' # training data set
 
 people=[]
 for i in os.listdir(DIR):
@@ -15,7 +15,7 @@ face_recon = cv.face.LBPHFaceRecognizer_create()
 face_recon.read("face_trained.yml")
 
 # vid = cv.VideoCapture(0)
-vid = cv.VideoCapture(r"Untitled video - Made with Clipchamp.mp4") #tast data
+vid = cv.VideoCapture(r"Untitled video - Made with Clipchamp.mp4") #test data
 
 
 while(True):
