@@ -8,12 +8,12 @@ Dataset link ->  https://www.kaggle.com/datasets/iamsouravbanerjee/indian-actor-
   
 ## 2.Install python package(s)
 Run in your shell to install python package(s)
-    
-    - pip install opencv-python
-
-    
-    
-    - pip install numpy
+```shell
+pip install opencv-python
+```
+```shell
+pip install numpy
+```  
  ## 3. Link Data set (Change file path(s))
   In  all the Python script(s)
    1. traing.py
